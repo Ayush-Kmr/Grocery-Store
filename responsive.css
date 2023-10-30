@@ -164,12 +164,12 @@
     position: absolute;
     height: 24rem;
     width: 26rem;
-    margin-top: 23rem;
+    margin-top: 20rem;
     margin-left: 2rem;
     z-index: 1;
   }
   .carousel-main {
-    top: -41vh;
+    top: -36vh;
   }
   .banner_section {
     height: 65vw;

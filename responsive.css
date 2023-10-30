@@ -68,12 +68,13 @@
     flex-direction: column;
     height: 100%;
     background-color: transparent;
+    margin-bottom: -76px;
     margin-top: 0px;
     width: 90%;
     max-width: 100%;
   }
   .app-img {
-    height: 450px;
+    height: 400px;
     width: 220px;
   }
   .download-app-text {
@@ -141,19 +142,37 @@
     width: 100%;
     margin: 0px;
   }
+  .client-box-container {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 400px) {
   body,
   html {
     font-size: 7px;
+  }
+  .category-heading h2,
+  .product-heading h3,
+  .client-heading h3 {
+    font-size: 1.2rem;
+  }
+  .banner_section {
+    min-height: 65vh;
   }
   .hero-section {
     position: absolute;
     height: 24rem;
     width: 26rem;
-    margin-top: 45rem;
+    margin-top: 23rem;
     margin-left: 2rem;
+    z-index: 1;
+  }
+  .carousel-main {
+    top: -41vh;
+  }
+  .banner_section {
+    height: 65vw;
   }
   .size {
     height: 35vh;

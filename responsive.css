@@ -43,7 +43,7 @@
   .banner_section .carousel-caption {
     margin-top: 2rem;
     width: 40rem;
-    margin-left: -11rem;
+    margin-left: -8rem;
   }
 
   .container2 {
@@ -158,7 +158,7 @@
     font-size: 1.2rem;
   }
   .banner_section {
-    min-height: 65vh;
+    min-height: 64vh;
   }
   .hero-section {
     position: absolute;

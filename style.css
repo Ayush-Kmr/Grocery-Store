@@ -42,7 +42,15 @@ html {
   font-family: var(--primary-font);
   scroll-behavior: smooth;
   line-height: 1.5;
-  background-color: rgb(214, 244, 204);
+  /* background-color: rgb(214, 244, 204); */
+  background-image: linear-gradient(
+    to top,
+    #fafcfc,
+    #f2fdfb,
+    #eefef6,
+    #eefeed,
+    #f3fde2
+  ) !important;
 }
 
 h1,
@@ -342,19 +350,7 @@ section {
   padding: 20px 20px;
   margin: 20px 20px;
 }
-.container2 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 32px;
-}
 
-.container2 .detai {
-  margin-top: 8px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
 .main-box {
   height: 100px;
   width: 100px;
@@ -369,7 +365,15 @@ section {
   margin-top: -40px;
 }
 .cb {
-  background-color: hsl(210, 56%, 96%);
+  /* background-color: hsl(210, 56%, 96%); */
+  background-image: linear-gradient(
+    to left bottom,
+    #f5f8f9,
+    #e6ffe0,
+    #e8eff3,
+    #e3eaf0,
+    #dee5ed
+  );
 }
 
 .parallax {
@@ -392,38 +396,6 @@ section {
   letter-spacing: 20px;
 }
 
-/* .content-card {
-  margin: 50px 50px 50px 5%;
-  width: 90%;
-  text-align: center;
-}
-
-.categories {
-  width: max-content;
-  margin: 25px;
-  border: 1px solid #184d47;
-  border-radius: 0 0 50px 50px;
-  display: inline-block;
-}
-
-.categories:hover {
-  box-shadow: 0 0 10px 3px #184d47;
-}
-
-.item-image {
-  height: 200px;
-  width: 200px;
-  border-radius: 0 0 50px 50px;
-  padding: 10px;
-}
-
-.image-title {
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 15px;
-  color: #5cb917;
-} */
 a {
   text-decoration: none;
 }
@@ -452,19 +424,20 @@ a {
 }
 .card-con {
   flex: 1 1 21rem;
+  flex-shrink: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
   margin: 35px 35px;
+  margin-top: 35px;
   background: #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-  padding: 10px 20px;
+  box-shadow: 0 0 15px rgba(167, 244, 122, 0.4);
+  padding: 5px 0px;
+  padding-right: 0px;
+  padding-left: 0px;
   align-self: normal;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-  border-bottom-left-radius: 40px;
+  border-radius: 65px;
 }
 
 .card-con img {
@@ -485,15 +458,22 @@ a {
 .card-con .btn {
   display: inline-block;
   margin-top: auto;
-  background: green;
-  color: #fff;
+  background: rgb(221, 248, 221);
+  color: #0e0e0e;
   text-align: center;
-  padding: 10px 20px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-size: 10px;
+  font-weight: 600;
+}
+.card-con .btn:hover {
+  transition: 1s linear;
+  background-color: #5cb917;
+  font-weight: 700;
 }
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap");
 /* * {
@@ -527,10 +507,10 @@ a {
   margin-bottom: 60px;
 }
 .card > div {
-  box-shadow: 0 15px 20px 0 rgba(237, 233, 233, 0.5);
+  box-shadow: 0 15px 20px 0 rgba(61, 109, 12, 0.5);
 }
 .card-image {
-  width: 298px;
+  width: 299px;
   height: 170px;
 }
 .card-image > img {
@@ -539,17 +519,106 @@ a {
   object-fit: cover;
   object-position: bottom;
 }
+
+.button {
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 15px;
+  margin-left: 16px;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% {
+    background-color: #b20000;
+    -webkit-box-shadow: 0 0 3px #b20000;
+  }
+  50% {
+    background-color: #ff0000;
+    -webkit-box-shadow: 0 0 40px #ff0000;
+  }
+  100% {
+    background-color: #b20000;
+    -webkit-box-shadow: 0 0 3px #b20000;
+  }
+}
+
+@-moz-keyframes glowing {
+  0% {
+    background-color: #b20000;
+    -moz-box-shadow: 0 0 3px #b20000;
+  }
+  50% {
+    background-color: #ff0000;
+    -moz-box-shadow: 0 0 40px #ff0000;
+  }
+  100% {
+    background-color: #b20000;
+    -moz-box-shadow: 0 0 3px #b20000;
+  }
+}
+
+@-o-keyframes glowing {
+  0% {
+    background-color: #b20000;
+    box-shadow: 0 0 3px #b20000;
+  }
+  50% {
+    background-color: #ff0000;
+    box-shadow: 0 0 40px #ff0000;
+  }
+  100% {
+    background-color: #b20000;
+    box-shadow: 0 0 3px #b20000;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #b20000;
+    box-shadow: 0 0 3px #b20000;
+  }
+  50% {
+    background-color: #ff0000;
+    box-shadow: 0 0 40px #ff0000;
+  }
+  100% {
+    background-color: #b20000;
+    box-shadow: 0 0 3px #b20000;
+  }
+}
+
 .card-text {
   margin: -30px auto;
-  margin-bottom: -50px;
-  height: 130px;
-  width: 180px;
-  background-color: #e1f3c9;
+  margin-bottom: -64px;
+  height: 105px;
+  width: 151px;
+  background-image: linear-gradient(
+    to left bottom,
+    #983d48,
+    #a95b40,
+    #af7c3f,
+    #aa9e4d,
+    #9cbf6f
+  );
+  border-radius: 20px;
   color: #fff;
   padding: 28px;
+  margin-top: 0px;
 }
 .card-meal-type {
   font-style: italic;
+  margin-left: 18px;
 }
 .card-title {
   font-size: 2.2rem;
@@ -562,13 +631,22 @@ a {
 .card-price {
   width: 90px;
   height: 90px;
-  background-color: #7ce8f6;
+  /* background-color: #7ce8f6; */
+  background-image: linear-gradient(
+    to left bottom,
+    #455c38,
+    #55754d,
+    #658f64,
+    #74ab7d,
+    #82c798
+  );
   color: black;
   margin-left: auto;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom-right-radius: 28px;
 }
 
 .bg-con {
@@ -995,7 +1073,15 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: hsl(107, 58%, 95%) !important;
+  background-image: linear-gradient(
+    to left bottom,
+    #a4c694,
+    #b3d29e,
+    #c2dfa8,
+    #d2ebb2,
+    #e2f8bc
+  );
+  /* background-color: hsl(107, 58%, 95%) !important; */
   border-radius: 10px;
   min-height: 130px;
   width: 120px;
@@ -1098,7 +1184,15 @@ section {
 #download-app {
   max-width: 1150px;
   width: 100%;
-  background-color: #ecf7ee;
+  /* background-color: #ecf7ee; */
+  background-image: linear-gradient(
+    to top,
+    #cbe2ed,
+    #c5eaee,
+    #c6f2e8,
+    #d2f7dc,
+    #e9f9cf
+  );
   height: 300px;
   margin: 225px auto;
   border-radius: 20px;

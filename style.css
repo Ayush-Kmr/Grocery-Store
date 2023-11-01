@@ -438,6 +438,34 @@ a {
   padding-left: 0px;
   align-self: normal;
   border-radius: 65px;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.8s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #023539;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.65s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(2.1);
+  }
 }
 
 .card-con img {
@@ -505,6 +533,34 @@ a {
   flex-direction: column;
   width: 300px;
   margin-bottom: 60px;
+
+  &:hover {
+    transition: all 0.8s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #023539;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.65s ease-out;
+  }
+
+  &:hover:before {
+    transition: 0.8s linear;
+    transform: scale(3.1);
+  }
 }
 .card > div {
   box-shadow: 0 15px 20px 0 rgba(61, 109, 12, 0.5);
@@ -876,14 +932,6 @@ h6 {
 }
 
 /* ======================= */
-/* #preloader {
-  background: #fff url(images/loader.gif) no-repeat center;
-  background-size: 50%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-} */
 
 #loader-wrapper {
   position: fixed;

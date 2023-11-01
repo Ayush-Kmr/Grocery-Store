@@ -408,7 +408,6 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* background: #efefef; */
   line-height: 1.5;
 }
 .content-card {
@@ -452,8 +451,7 @@ a {
     content: "";
     position: absolute;
     z-index: -1;
-    top: -16px;
-    right: -16px;
+    /* top: -16px; */
     background: #023539;
     height: 32px;
     width: 32px;
@@ -504,12 +502,6 @@ a {
   font-weight: 700;
 }
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap");
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Playfair Display", serif;
-} */
 .deal {
   background: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1776&q=80);
   background-size: cover;
@@ -546,8 +538,7 @@ a {
     content: "";
     position: absolute;
     z-index: -1;
-    top: -16px;
-    right: -16px;
+    /* top: -16px; */
     background: #023539;
     height: 32px;
     width: 32px;

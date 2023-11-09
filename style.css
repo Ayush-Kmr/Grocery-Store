@@ -1156,12 +1156,12 @@ section {
     #d2ebb2,
     #e2f8bc
   );
-  /* background-color: hsl(107, 58%, 95%) !important; */
-  border-radius: 10px;
   min-height: 130px;
   width: 120px;
   border: 1px solid rgba(0, 0, 0, 0.03);
   cursor: pointer;
+  border-bottom-right-radius: 65px !important;
+  border-top-left-radius: 65px !important;
 }
 .icon-text {
   font-size: 15px !important;

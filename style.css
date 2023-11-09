@@ -942,7 +942,7 @@ h6 {
 
 @-webkit-keyframes myfirst {
   0% {
-    left: -25%;
+    left: 25%;
   }
   100% {
     left: 100%;
@@ -951,7 +951,7 @@ h6 {
 
 @keyframes myfirst {
   0% {
-    left: -25%;
+    left: 25%;
   }
   100% {
     left: 100%;
@@ -1350,7 +1350,7 @@ section {
   padding: 30px 20px;
   border: 1px solid #f1f1f1;
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.05);
-  border-radius: 0px 30px 0px 30px;
+  border-radius: 0px 100px 0px 100px;
 }
 .client-box:hover {
   background-color: #c3eecd;
